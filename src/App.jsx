@@ -5,6 +5,7 @@ import Calculator from "./components/Calculator";
 import Card from "./components/Card";
 
 import contacts from "./contacts";
+import emote from "./emojipedia";
 
 function App() {
   return (
@@ -30,33 +31,28 @@ function App() {
       </div>
 
       <div className="card-container">
-        <Card
-          name={contacts[0].name}
-          img={contacts[0].img}
-          alt={contacts[0].alt}
-          tel={contacts[0].tel}
-          email={contacts[0].email}
-          text={contacts[0].text}
-        />
-        <Card
-          name={contacts[1].name}
-          img={contacts[1].img}
-          alt={contacts[1].alt}
-          tel={contacts[1].tel}
-          email={contacts[1].email}
-          text={contacts[1].text}
-        />
-        <Card
-          name={contacts[2].name}
-          img={contacts[2].img}
-          alt={contacts[2].alt}
-          tel={contacts[2].tel}
-          email={contacts[2].email}
-          text={contacts[2].text}
-        />
+        {contacts.map((contact) => (
+          <Card
+            name={contact.name}
+            alt={contact.alt}
+            img={contact.img}
+            email={contact.email}
+            tel={contact.tel}
+            text={contact.text}
+            key={contact.id}
+          />
+        ))}
       </div>
 
       <hr style={{ margin: "30px" }} />
+      <div className="text-center">
+        <Header heading="Emojipedia" />
+      </div>
+      <div className="card-container">
+        {emote.map((emoji) => (
+          <Card key={emoji.id} img={emoji.emojiIcon} alt={emoji.emojiName} />
+        ))}
+      </div>
     </div>
   );
 }

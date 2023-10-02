@@ -8,19 +8,19 @@ const Detail = (props) => {
       </h5>
       <p className="mb-3 font-normal text-gray-700">{props.text}</p>
       <p className="mb-3 font-normal text-gray-700">
-        Tel:{props.tel} <br />
-        Email: {props.email}{" "}
+        {props.tel} <br />
+        {props.email}
       </p>
     </div>
   );
 };
 Detail.propTypes = {
-  name: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  tel: PropTypes.number.isRequired,
-  email: PropTypes.email,
-  img: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  alt: PropTypes.string,
+  tel: PropTypes.string,
+  email: PropTypes.string,
+  img: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default Detail;

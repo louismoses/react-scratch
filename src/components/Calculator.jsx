@@ -1,7 +1,6 @@
 import { add, subtract, multiply, divide } from "../calculator";
 
 const Calculator = () => {
-  console.log(add);
   return (
     <div>
       <ul>

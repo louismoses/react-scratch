@@ -22,12 +22,12 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-  name: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  tel: PropTypes.number.isRequired,
-  email: PropTypes.email,
-  img: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  alt: PropTypes.string,
+  tel: PropTypes.string,
+  email: PropTypes.string,
+  img: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default Card;

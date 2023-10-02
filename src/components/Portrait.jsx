@@ -12,8 +12,8 @@ const Portrait = (props) => {
   );
 };
 Portrait.propTypes = {
-  img: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  img: PropTypes.string,
+  alt: PropTypes.string,
 };
 
 export default Portrait;
