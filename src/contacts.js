@@ -17,7 +17,7 @@ const contacts = [
   },
   {
     name: "Rait",
-    img: "https://effortlessswimming.com/wp-content/uploads/2014/08/Ratasepp-Rait.png",
+    img: "https://themacweekly.com/wp-content/uploads/2018/04/NESS2-683x1024.jpg",
     alt: "Photo Rait: ",
     tel: "+63 960 504 9151",
     email: "moses@mail.com",
