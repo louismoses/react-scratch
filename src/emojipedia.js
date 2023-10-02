@@ -2,7 +2,7 @@ const emote = [
   {
     id: 1,
     emojiIcon: "💪",
-    emojiName: "lexed Biceps",
+    emojiName: "Flexed Biceps",
     emojiDetail:
       "An arm flexing to show its biceps muscle. Represents strength, or working out.",
   },

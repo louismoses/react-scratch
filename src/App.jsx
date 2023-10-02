@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import List from "./components/List";
 import Calculator from "./components/Calculator";
 import Card from "./components/Card";
+import EmojiCard from "./components/EmojiCard";
 
 import contacts from "./contacts";
 import emote from "./emojipedia";
@@ -50,7 +51,12 @@ function App() {
       </div>
       <div className="card-container">
         {emote.map((emoji) => (
-          <Card key={emoji.id} img={emoji.emojiIcon} alt={emoji.emojiName} />
+          <EmojiCard
+            key={emoji.id}
+            name={emoji.emojiName}
+            text={emoji.emojiDetail}
+            emoji={emoji.emojiIcon}
+          />
         ))}
       </div>
     </div>
