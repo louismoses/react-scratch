@@ -54,11 +54,13 @@ function App() {
           <EmojiCard
             key={emoji.id}
             name={emoji.emojiName}
-            text={emoji.emojiDetail}
+            text={emoji.emojiDetail.substring(0, 50)}
             emoji={emoji.emojiIcon}
           />
         ))}
       </div>
+
+      <hr style={{ margin: "30px" }} />
     </div>
   );
 }

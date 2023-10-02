@@ -4,7 +4,14 @@ import Emoji from "./Emoji";
 
 const EmojiCard = (props) => {
   return (
-    <div>
+    <div
+      style={{
+        border: "solid 1px red",
+        borderRadius: "8px",
+        padding: "8px",
+        margin: "8px",
+      }}
+    >
       <Emoji emoji={props.emoji} />
       <Detail name={props.name} text={props.text} />
     </div>
