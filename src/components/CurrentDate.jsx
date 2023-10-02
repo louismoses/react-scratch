@@ -1,5 +1,3 @@
-import React from "react";
-
 const CurrentDate = () => {
   const date = new Date();
   const currentDate = date.getDate();

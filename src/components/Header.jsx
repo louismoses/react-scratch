@@ -1,9 +1,7 @@
-import React from "react";
-
-const Header = () => {
+const Header = (props) => {
   return (
     <>
-      <h1 className="text-xl lead stroke-orange-400">Moses Pogi</h1>
+      <h1 className="text-xl lead stroke-orange-400">{props.heading}</h1>
     </>
   );
 };

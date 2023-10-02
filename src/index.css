@@ -13,3 +13,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  place-content: center;
+  flex-wrap: wrap;
+}
