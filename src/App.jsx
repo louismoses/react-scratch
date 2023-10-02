@@ -4,6 +4,8 @@ import List from "./components/List";
 import Calculator from "./components/Calculator";
 import Card from "./components/Card";
 
+import contacts from "./contacts";
+
 function App() {
   return (
     <div>
@@ -29,21 +31,28 @@ function App() {
 
       <div className="card-container">
         <Card
-          name="Louis"
-          img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Louis_Eysen_-_Die_Mutter_des_K%C3%BCnstlers_-_Google_Art_Project.jpg/454px-Louis_Eysen_-_Die_Mutter_des_K%C3%BCnstlers_-_Google_Art_Project.jpg?20110210001623"
-          alt="Photo Louis "
-          tel="+63 960 504 9151"
-          email="louis@mail.com"
-          text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+          name={contacts[0].name}
+          img={contacts[0].img}
+          alt={contacts[0].alt}
+          tel={contacts[0].tel}
+          email={contacts[0].email}
+          text={contacts[0].text}
         />
-
         <Card
-          name="Moses"
-          img="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Guido_Reni_-_Moses_with_the_Tables_of_the_Law_-_WGA19289.jpg/220px-Guido_Reni_-_Moses_with_the_Tables_of_the_Law_-_WGA19289.jpg"
-          alt="Photo Moses: "
-          tel="+63 960 504 9151"
-          email="moses@mail.com"
-          text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+          name={contacts[1].name}
+          img={contacts[1].img}
+          alt={contacts[1].alt}
+          tel={contacts[1].tel}
+          email={contacts[1].email}
+          text={contacts[1].text}
+        />
+        <Card
+          name={contacts[2].name}
+          img={contacts[2].img}
+          alt={contacts[2].alt}
+          tel={contacts[2].tel}
+          email={contacts[2].email}
+          text={contacts[2].text}
         />
       </div>
 
